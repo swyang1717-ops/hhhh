@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OptiGuard — 광학 설계 & 드론 탐지 시스템</title>
+  <meta name="description" content="최고의 광학 설계 기술과 드론 탐지 솔루션을 제공하는 기업. 광학 시뮬레이션, 맞춤형 센서, 실시간 위협 탐지 및 통합 관제 솔루션을 제공합니다.">
+  <meta name="keywords" content="광학 설계, 드론 탐지, 센서, 영상처리, 라이다, 레이더, 위협탐지">
+  <style>
+    /* 기본 리셋 */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans KR',sans-serif;color:#0f172a}
+    a{color:inherit;text-decoration:none}
+
+    /* 그리드 레이아웃 */
+    .container{max-width:1160px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,#0ea5a4,#6366f1);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav ul{display:flex;gap:18px;list-style:none}
+    nav a{padding:8px 12px;border-radius:8px}
+    nav a.cta{background:#0f172a;color:white}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:48px 0}
+    .hero h1{font-size:38px;line-height:1.05;margin-bottom:16px}
+    .hero p{color:#374151;margin-bottom:20px}
+    .cta-row{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:10px;font-weight:600;border:none;cursor:pointer}
+    .btn.primary{background:#111827;color:white}
+    .btn.ghost{background:transparent;border:1px solid #e5e7eb}
+    .hero-card{background:#ffffff;border-radius:12px;padding:20px;box-shadow:0 8px 30px rgba(15,23,42,0.08)}
+
+    /* 특징 섹션 */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0}
+    .feature{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.05)}
+    .feature h3{margin-top:10px;font-size:18px}
+    .feature p{margin-top:8px;color:#475569;font-size:14px}
+
+    /* 기술 섹션 */
+    .tech{display:flex;gap:28px;align-items:flex-start;margin:40px 0}
+    .tech .left{flex:1}
+    .tech .right{width:420px}
+    .specs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .spec{background:#f8fafc;padding:12px;border-radius:10px}
+
+    /* 케이스 스터디 */
+    .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0}
+    .case{border-radius:12px;overflow:hidden;background:#fff}
+    .case img{width:100%;height:180px;object-fit:cover}
+    .case .body{padding:14px}
+
+    /* 팀 & 연락 */
+    .team{display:flex;gap:18px;margin:36px 0}
+    .member{flex:1;background:#fff;padding:16px;border-radius:12px;text-align:center}
+    .member img{width:96px;height:96px;border-radius:50%;object-fit:cover;margin:0 auto}
+
+    /* Footer */
+    footer{margin-top:48px;padding:28px 0;border-top:1px solid #f1f5f9;color:#475569}
+
+    /* 반응형 */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .cases{grid-template-columns:1fr}
+      .team{flex-direction:column}
+      nav ul{display:none}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">OG</div>
+        <div>
+          <div style="font-weight:700">OptiGuard</div>
+          <div style="font-size:12px;color:#6b7280">Optical Design & Drone Detection</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#product">제품</a></li>
+          <li><a href="#tech">기술</a></li>
+          <li><a href="#cases">사례</a></li>
+          <li><a href="#about">회사소개</a></li>
+          <li><a class="cta" href="#contact">문의</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">정밀한 광학 설계로 더 안전한 하늘을 만듭니다.</h1>
+        <p>광학 시뮬레이션, 맞춤형 센서, 실시간 영상·레이더 융합으로 드론 위협을 빠르고 정확하게 탐지하는 통합 솔루션을 제공합니다.</p>
+        <div class="cta-row">
+          <button class="btn primary">제품 데모 요청</button>
+          <button class="btn ghost">솔루션 브로셔 다운로드</button>
+        </div>
+
+        <div style="margin-top:28px;display:flex;gap:12px;align-items:center">
+          <div style="display:flex;gap:10px;align-items:center">
+            <strong>99.8%</strong>
+            <div style="font-size:13px;color:#6b7280">정확도 (시뮬레이션 기반)</div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center">
+            <strong>150+</strong>
+            <div style="font-size:13px;color:#6b7280">납품/설치 사례</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="제품 요약 카드">
+        <h4 style="margin-bottom:10px">주요 솔루션 요약</h4>
+        <ul style="list-style:none;padding-left:0;color:#334155">
+          <li>• 광학 패턴 설계 및 렌즈 최적화</li>
+          <li>• EO/IR 영상 처리 기반 실시간 탐지</li>
+          <li>• 라이다·레이더 융합 관제 모듈</li>
+          <li>• 무선 신호 분석 기반 식별 기술</li>
+        </ul>
+        <div style="margin-top:16px;font-size:13px;color:#64748b">맞춤형 통합 관제판과 API로 기존 보안 시스템에 빠르게 연동됩니다.</div>
+      </aside>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" aria-label="핵심역량">
+      <div class="feature">
+        <h3>광학 설계 & 시뮬레이션</h3>
+        <p>고해상도 이미징을 위한 광학 패턴 최적화, MTF 기반 성능 예측 및 제조 공차 고려 설계.</p>
+      </div>
+      <div class="feature">
+        <h3>멀티센서 융합</h3>
+        <p>EO/IR, 라이다, 레이더, RF 데이터를 실시간 융합해 오탐을 최소화합니다.</p>
+      </div>
+      <div class="feature">
+        <h3>AI 기반 식별</h3>
+        <p>딥러닝 기반 객체 검출과 행동 예측으로 위협 레벨을 자동 등급화합니다.</p>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section id="tech" class="tech" aria-labelledby="tech-title">
+      <div class="left">
+        <h2 id="tech-title">핵심 기술</h2>
+        <p>광학·전자·알고리즘의 교차점에서 실전 적용 가능한 탐지 시스템을 개발합니다.</p>
+
+        <div class="specs">
+          <div class="spec">
+            <strong>광학 설계</strong>
+            <div style="font-size:13px;color:#475569;margin-top:6px">비구면 렌즈 설계, 반사/굴절 시뮬레이션, 소형화 광학 모듈</div>
+          </div>
+          <div class="spec">
+            <strong>이미지 처리</strong>
+            <div style="font-size:13px;color:#475569;margin-top:6px">노이즈 제거, 고속 트래킹, HDR 영상 병합</div>
+          </div>
+          <div class="spec">
+            <strong>센서 하드웨어</strong>
+            <div style="font-size:13px;color:#475569;margin-top:6px">맞춤형 EO/IR 카메라, 라이다 모듈, 융합 보드</div>
+          </div>
+          <div class="spec">
+            <strong>시스템 통합</strong>
+            <div style="font-size:13px;color:#475569;margin-top:6px">실시간 스트리밍, API 연동, 경보/로그 시스템</div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:18px">제품 라인업</h3>
+        <ul style="margin-top:8px;color:#334155">
+          <li>• OG-Scout: 실시간 지상 감시용 통합카메라 시스템</li>
+          <li>• OG-Scan: 라이다·레이더 융합 고정형 관제 모듈</li>
+          <li>• OG-Core: 중앙 관제 소프트웨어 + API</li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <div style="background:#f8fafc;padding:18px;border-radius:12px;">
+          <h4>성능 지표</h4>
+          <p style="font-size:13px;color:#475569;margin-top:8px">탐지 거리, 식별 정확도, 평균 반응 시간 등을 맞춤형 요구에 따라 튜닝합니다.</p>
+          <dl style="margin-top:12px">
+            <dt style="font-weight:700">탐지거리</dt><dd style="margin-left:0;margin-top:6px">최대 3km(모델 및 환경 의존)</dd>
+            <dt style="font-weight:700;margin-top:8px">식별률</dt><dd style="margin-left:0;margin-top:6px">식별 정확도 95%+</dd>
+            <dt style="font-weight:700;margin-top:8px">통합</dt><dd style="margin-left:0;margin-top:6px">REST API, MQTT, ONVIF 지원</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="cases">
+      <h2>성공 사례</h2>
+      <div class="cases">
+        <article class="case" aria-labelledby="case1">
+          <img src="https://via.placeholder.com/800x400?text=Case+1" alt="항공보안 적용 사례 이미지">
+          <div class="body">
+            <h3 id="case1">공항 주변 무인기 탐지</h3>
+            <p>혼합 센서 융합으로 오탐을 60% 감소시키고, 관제 연동으로 현장 대응 시간을 단축했습니다.</p>
+          </div>
+        </article>
+        <article class="case" aria-labelledby="case2">
+          <img src="https://via.placeholder.com/800x400?text=Case+2" alt="항만 보안 적용 사례 이미지">
+          <div class="body">
+            <h3 id="case2">항만 보안 자동화</h3>
+            <p>야간 IR 감시와 레이더 연동으로 24/7 무인기 위협 감지가 가능해졌습니다.</p>
+          </div>
+        </article>
+        <article class="case" aria-labelledby="case3">
+          <img src="https://via.placeholder.com/800x400?text=Case+3" alt="산업단지 적용 사례 이미지">
+          <div class="body">
+            <h3 id="case3">산업단지 맞춤형 관제</h3>
+            <p>설치형 소형 모듈로 비용 효율적인 커버리지를 제공, 관리 효율을 향상했습니다.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TEAM & CONTACT -->
+    <section id="about">
+      <h2>회사 및 팀</h2>
+      <div class="team">
+        <div class="member">
+          <img src="https://via.placeholder.com/200" alt="CEO 이미지">
+          <h4>김광학</h4>
+          <div style="font-size:13px;color:#64748b">CEO / 광학 설계 책임</div>
+        </div>
+        <div class="member">
+          <img src="https://via.placeholder.com/200" alt="CTO 이미지">
+          <h4>이연산</h4>
+          <div style="font-size:13px;color:#64748b">CTO / 센서 융합 & 알고리즘</div>
+        </div>
+        <div class="member">
+          <img src="https://via.placeholder.com/200" alt="COO 이미지">
+          <h4>박관리</h4>
+          <div style="font-size:13px;color:#64748b">COO / 현장 통합 및 납품</div>
+        </div>
+      </div>
+
+      <h2 id="contact" style="margin-top:22px">문의하기</h2>
+      <div style="display:grid;grid-template-columns:1fr 420px;gap:18px;margin-top:12px;align-items:start">
+        <form action="#" onsubmit="alert('폼 전송 시뮬레이션: 실제 서버 연결 필요');return false;" style="background:#fff;padding:18px;border-radius:12px">
+          <label style="display:block;margin-bottom:8px">회사명<input required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;margin-top:6px"></label>
+          <label style="display:block;margin-bottom:8px">담당자<input required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;margin-top:6px"></label>
+          <label style="display:block;margin-bottom:8px">이메일<input type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;margin-top:6px"></label>
+          <label style="display:block;margin-bottom:8px">문의내용<textarea required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;margin-top:6px;min-height:120px"></textarea></label>
+          <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px"><button class="btn primary" type="submit">문의 보내기</button><button class="btn ghost" type="reset">리셋</button></div>
+        </form>
+
+        <aside style="background:#fff;padding:18px;border-radius:12px">
+          <h4>연락처</h4>
+          <p style="font-size:14px;color:#475569;margin-top:8px">서울특별시 · info@example.com · +82 2-000-0000</p>
+          <h4 style="margin-top:12px">설치 옵션</h4>
+          <ul style="font-size:13px;color:#475569;margin-top:8px">
+            <li>• 현장 설치형(고정형/회전형)</li>
+            <li>• 소형 모듈형(배터리/태양광 옵션)</li>
+            <li>• 중앙관제 연동(클라우드/온프레미스)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <strong>OptiGuard</strong> 2025. All rights reserved.</div>
+        <div style="font-size:13px;color:#64748b">개인정보처리방침 · 이용약관 · 사업자정보</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // 간단한 접근성 보완: 폼 첫 입력 포커스 관리
+    document.addEventListener('DOMContentLoaded',()=>{
+      const firstInput = document.querySelector('form input');
+      if(firstInput) firstInput.setAttribute('aria-label','회사명');
+    });
+  </script>
+</body>
+</html>
